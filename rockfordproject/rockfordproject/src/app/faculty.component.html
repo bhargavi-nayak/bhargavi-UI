@@ -1,0 +1,33 @@
+<style>
+    img{
+        border-radius: 50%;
+        border:2px solid white;
+    }
+</style>
+<div class='faculty'>
+    <div class="container">
+        <div class="row">
+            <p style="color: white;">Welcome {{ getPerson() }} ! to RockFord</p>
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <img src='./assets/img1.jpg' id="1" (click)="display1();">
+            </div>
+            <div class="col-md-2">
+                <img src='./assets/img2.jpg' id="2" (click)="display2();">
+            </div><div class="col-md-2">
+                <img src='./assets/img3.jpg'id="3"(click)="display3();">
+            </div><div class="col-md-2">
+                <img src='./assets/img4.jpg'id="4"(click)="display4();">
+            </div><div class="col-md-2">
+                <img src='./assets/img5.jpg'id="5"(click)="display5();">
+            </div>
+        </div>
+        <div class="row" style="font-family: cursive;color:rgb(2, 2, 2)">
+            <p>Name:{{value[0]}}</p><br>
+            <p>Post:{{value[1]}}</p><br>
+            <p>mail:{{value[2]}}</p><br>
+            <p>{{value[3]}}</p><br>
+            <p>{{value[4]}}</p><br>
+        </div>
+    </div>
+    </div>

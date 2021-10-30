@@ -1,0 +1,82 @@
+<style>
+    label {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+</style>
+<div class='admission'>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6" style="background-color: lavender;font-family: Verdana, Geneva, Tahoma, sans-serif;border: 1px solid cornflowerblue; border-radius: 10px;">
+                <div class="row" style="text-align: center;">Welcome {{getPerson()}} !</div>
+                <form name='frm1' style="margin: 3px;">
+                    <div class="row">
+                    <label>First Name</label>
+                    <input type="text" [(ngModel)]="txtFname" id='txtFname' name='txtFname' placeholder="First Name" required><br>
+                    </div>
+                    <div class="row">
+                        <label>Last Name</label>
+                    <input type="text" [(ngModel)]="txtLname" id='txtLname' name='txtLname' placeholder="Last Name"required><br>
+                    
+                    </div>
+                    <div class="row">
+                        <label>DOB</label>
+                    <input type="date" id='dob' name='dob' required> <br>
+                    
+                    </div>
+                    <div class="row">
+                        <label>Email</label>
+                        <input type="email" placeholder="something@email.com"required>
+                    </div>
+                    <div class="row">
+                        <label>Address</label>
+                    <input type="text" id='address' name='address' placeholder="Address"required><br>
+                    </div>
+                    <div class="row">
+                        <label>Course</label>
+                        <select id='course'>
+                            <option selected>Online - Business in Society</option>
+                            <option>Online - Global Business</option>
+                            <option>Online - Sustainable Business Strategy</option>
+                            <option>Campus - Master of Education (M.Ed.)</option>
+                            <option>Campus - Master of Arts in Teaching (MAT)</option>
+                            <option>Campus - Master of Business Administration (MBA)</option>
+                        </select>
+                    </div>
+                    <div class="row" style="margin-top:3px;">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6"><button class='btn btn-info' (click)="addPerson()">Submit</button></div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </form>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+    </div>
+</div>
+<!--<table>
+        <tr>
+          <td>Firstname</td>
+         <td> <input [(ngModel)]="firstname" name="firstname" type="text"></td>
+       </tr>
+       <tr>
+         <td>Lastname</td>
+         <td> <input [(ngModel)]="lastname" name="lastname" type="text"></td> 
+       </tr>
+      <tr> 
+        <td>Age</td> 
+        <td> <input [(ngModel)]="age" name="age" type="number"></td> </tr>
+    <tr> <td></td> <td><button (click)="addPerson()">Add</button></td>
+    </tr>
+    </table>
+    <h4> Get person </h4>
+    <input [(ngModel)]="queryKey" name="queryKey" type="text"><br>
+    <button (click)="getPerson(queryKey)"> Get </button>
+    <h4>Result</h4>
+    {{queryResult}}
+    <h4> Delete person</h4>
+      <input [(ngModel)]="removeKey" name="removeKey" type="text"> <br>
+      <button (click)="deletePerson(removeKey)"> Delete </button>
+    <h4> Reset store </h4>
+    <button (click)="reset()"> Reset </button>-->
